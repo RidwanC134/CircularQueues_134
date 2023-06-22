@@ -73,7 +73,7 @@ public:
 		cout << "\nElement in the queue are...\n";
 
 		// Jika FRONT_position <= REAR_position, iterasi dari FRONT hingga REAR
-		if (FRONT_position <= REAR_position) {
+		if (FRONT_position <= REAR_position) { 
 			while (FRONT_position <= REAR_position) {
 				cout << queue_array[FRONT_position] << "   ";
 				FRONT_position++;
@@ -107,6 +107,39 @@ int main() {
 		try {
 			cout << "Menu" << endl;
 			cout << "1. Implement insert operation" << endl;
+			cout << "2. Implement delete operation" << endl;
+			cout << "3. Display values" << endl;
+			cout << "4. Exit" << endl;
+			cout << "Enter your choice (1-4)" << endl;
+			cin >> ch;
+			cout << endl;
+
+			switch (ch) {
+			case '1': {
+
+				q.insert();
+				break;
+			}
+			case '2': {
+				q.remove();
+				break;
+			}
+			case '3': {
+				q.display();
+				break;
+			}
+			case '4': {
+				return 0;
+			}
+			default: {
+				cout << "Invalid option!!" << endl;
+				break;
+			}
+			}
+		}
+		catch (exception& e) {
+			cout << "Check for the value entered." << endl;
 		}
 	}
+	return 0;
 }
