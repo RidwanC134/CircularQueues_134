@@ -104,7 +104,7 @@ int main() {
 	char ch;
 
 	while (true) {
-		try {
+		try { 
 			cout << "Menu" << endl;
 			cout << "1. Implement insert operation" << endl;
 			cout << "2. Implement delete operation" << endl;
@@ -114,7 +114,7 @@ int main() {
 			cin >> ch;
 			cout << endl;
 
-			switch (ch) {
+			switch (ch) { 
 			case '1': {
 
 				q.insert();
