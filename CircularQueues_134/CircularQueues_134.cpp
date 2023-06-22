@@ -114,7 +114,7 @@ int main() {
 			cin >> ch;
 			cout << endl;
 
-			switch (ch) { 
+			switch (ch) {  
 			case '1': {
 
 				q.insert();
